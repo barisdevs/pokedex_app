@@ -1,17 +1,42 @@
-# pokedex_app
+# 📱 Pokedex App
 
-A new Flutter project.
+Flutter ile geliştirilmiş, PokeAPI üzerinden veri çeken basit bir Pokedex uygulamasıdır.
 
-## Getting Started
+## 🚀 Özellikler
 
-This project is a starting point for a Flutter application.
+- Pokemon verilerini API'den çekme
+- Pokemon görsellerini listeleme
+- Dinamik liste kullanımı
+- Kart tasarımı
+- State yönetimi
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Kullanılan Teknolojiler
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- HTTP Package
+- REST API
+- PokeAPI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ▶️ Kurulum
+
+git clone https://github.com/barisdevs/pokedex_app.git
+
+cd pokedex_app
+
+flutter pub get
+
+flutter run
+
+## 🌐 API
+
+https://pokeapi.co/
+
+## 👨‍💻 Geliştirici
+
+Barış  
+GitHub: https://github.com/barisdevs
+
+## 🤖 Not
+
+Bu proje geliştirilirken öğrenme ve geliştirme sürecinde yapay zekadan destek alınmıştır.
