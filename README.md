@@ -1,4 +1,4 @@
-# 📱 Pokedex App
+# Pokedex App
 
 Flutter ile geliştirilmiş, PokeAPI üzerinden veri çeken basit bir Pokedex uygulamasıdır.
 
@@ -8,35 +8,63 @@ Flutter ile geliştirilmiş, PokeAPI üzerinden veri çeken basit bir Pokedex uy
 - Pokemon görsellerini listeleme
 - Dinamik liste kullanımı
 - Kart tasarımı
-- State yönetimi
+- Detay sayfası (tıklanınca açılır)
+
+---
 
 ## 🛠️ Kullanılan Teknolojiler
 
 - Flutter
 - Dart
-- HTTP Package
-- REST API
+- HTTP (API istekleri)
 - PokeAPI
 
-## ▶️ Kurulum
+---
 
-git clone https://github.com/barisdevs/pokedex_app.git
+## 📌 Flutter Tarafında Yapılan İyileştirmeler
 
-cd pokedex_app
+1. İsimlendirme düzenlendi  
+   - Türkçe/İngilizce karışıklığı giderildi  
+   - Daha anlamlı method ve değişken isimleri kullanıldı  
 
-flutter pub get
+2. Anlamsız widget isimleri kaldırıldı  
+   - MyWidget yerine anlamlı isimler kullanıldı  
 
-flutter run
+3. Tip güvenliği sağlandı  
+   - List<dynamic> yerine List<Pokemon> kullanıldı  
 
-## 🌐 API
+4. Veri modeli oluşturuldu  
+   - Pokemon model sınıfı yazıldı  
+   - fromJson ile veri parse edildi  
 
-https://pokeapi.co/
+5. API performansı artırıldı  
+   - Sıralı istekler yerine Future.wait ile paralel istek yapıldı  
 
-## 👨‍💻 Geliştirici
+6. Hata yönetimi eklendi  
+   - try-catch kullanıldı  
+   - HTTP statusCode kontrolü yapıldı  
 
-Barış  
-GitHub: https://github.com/barisdevs
+7. Loading durumu eklendi  
+   - CircularProgressIndicator ile kullanıcıya geri bildirim verildi  
 
-## 🤖 Not
+8. Widget yapısı düzeltildi  
+   - MaterialApp root seviyeye taşındı  
 
-Bu proje geliştirilirken öğrenme ve geliştirme sürecinde yapay zekadan destek alınmıştır.
+9. Service katmanı oluşturuldu  
+   - API işlemleri ayrı sınıfa alındı  
+
+10. API yapısı incelendi  
+   - limit / offset mantığı öğrenildi  
+
+11. Detay sayfası eklendi  
+   - Kartlara tıklanınca PokemonDetailPage açılıyor  
+
+---
+
+## 📌 Not
+
+Bu proje geliştirilirken yapay zekadan destek alınmıştır.  
+Ancak kullanılan tüm kodlar anlaşılmaya çalışılarak uygulanmıştır ve öğrenme odaklı ilerlenmiştir.
+
+---
+
